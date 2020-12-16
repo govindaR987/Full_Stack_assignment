@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<style>
+body{
+background-color:#FFF;
+}
+</style>
+</head>
+<body>
+    <script>
+        
+        function changeColor(){
+            const x = 1;       
+                document.body.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+                setTimeout(changeColor, x*1000);
+        
+        }
+        changeColor();
+    </script>
+</body>

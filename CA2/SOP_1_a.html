@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<style>
+body{
+background-color:#FFF;
+}
+</style>
+</head>
+<body>
+    <script>
+        
+        function changeColor(){
+            const x = 1;
+                document.body.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+                setTimeout(changeColor, x*1000);
+        
+        }
+    </script>
+    <div style="margin: 25%;">
+        <button type="button" onmouseover="changeColor()"> Button 1</button>
+        <button type="button" onclick="window.status = 'hello';"> Button 2</button>
+    </div>    
+
+</body>

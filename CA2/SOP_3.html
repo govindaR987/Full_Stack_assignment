@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<style>
+body{
+background-color:#FFF;
+}
+
+input{
+    margin: 5px;
+}
+</style>
+</head>
+<body>
+    <script>
+
+    
+         function countVowels(str1){
+            alert('hey');   
+           alert(str1);
+           alert((str1.match(new RegExp("a","g"))|| []).length);
+        }
+    </script>
+
+    <div style="margin: 15%;">
+        <form>
+            <label for="name">String </label> <input type="text"  id="str1" oninput="document.getElementById('op').innerHTML= ((this.value.match(new RegExp('[aeiouAEIOU]','g'))|| []).length);" /><br><br> 
+            <label for="op">Vowels: </label><text id="op"></text>
+        </form>    
+    </div>    
+
+</body>
